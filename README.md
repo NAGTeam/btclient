@@ -16,7 +16,7 @@ Discussion happens on github issue tracker. Put there any code snippets,
 ideas, references you find useful. :)
 
 ## Technologies to use
-Bitcoin, Javascript, bitcoin.js, bower, karma, tweetnacl.js, jshint [, ...]
+Bitcoin, Javascript, bitcoin.js, bower, <del>karma</del>QUnit, tweetnacl.js, jshint [, ...]
 
 ## User flow
 Every week, Alice's grandmother sends Alice 1 satoshi to address `A` using some crazy crypto software that Alice has no clue on how to use it.
