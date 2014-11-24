@@ -1,6 +1,8 @@
 # btclient
 
-A very naif bitcoin client that can be used using QR-codes for sharing
+# Please read before any push, bro!
+
+A very naif bitcoin client that can be used using QR-codes for sending
 a bunch of satoshis. We'd expect to write few lines of code, keeping lots
 of logic in the hand of good javascript libraries.
 
@@ -8,8 +10,10 @@ The client should **only** broadcast the transaction to the network, course.
 
 Before the first line of code to be pushed, few ideas about the design of this
 client should be written down.
-Development should be very git-oriented, using branches and pull-requests.
-Discussion happens on github issue tracker.
+Development should be very git-oriented, using branches
+and pull-requests that has to be voted up by all the active members.
+Discussion happens on github issue tracker. Put there any code snippets,
+ideas, references you find useful. :)
 
 ## Technologies to use
 Bitcoin, Javascript, bitcoin.js, bower, karma, tweetnacl.js, jshint [, ...]
