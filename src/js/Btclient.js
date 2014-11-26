@@ -40,6 +40,7 @@ Btclient.createtx = function (fromaddress, toaddress, amount, unspent, cb) {
         }
     });
     tx.addOutput(toaddress, amount);
+    tx.addOutput(fromaddress, sum - amount);
     if (sum < amount) {
         cb(new Error("Not enough money, bro."));
     }
