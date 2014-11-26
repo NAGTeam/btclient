@@ -72,7 +72,7 @@ Btclient.signtx = function (key, tx, cb) {
 Btclient.broadcasttx = function (tx, cb) {
     Btclient.util.ajax('POST', 'https://blockchain.info/pushtx', {'tx': tx.toHex()}, 'text', function (err, res) {
         if (err) {
-            cb(err);
+            return cb(err);
         }
         cb(null, res);
     });
@@ -119,7 +119,7 @@ Btclient.util.ajax = function (httpmethod, url, parameters, responsetype, cb) {
         cb(null, xhr.response);
     };
     xhr.onerror = function (e) {
-        cb(e.error);
+        return cb(e.error);
     };
     if (Object.keys(parameters).length > 0) {
         url = httpmethod == 'GET' ? url + '?' + encodedhttpparameters : url;
