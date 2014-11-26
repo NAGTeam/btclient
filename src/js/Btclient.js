@@ -1,3 +1,8 @@
+var Btclient;
+
+(function () {
+'use strict';
+
 Btclient = {};
 
 // Retrieve the unspent outputs for a given Bitcoin address.
@@ -5,7 +10,6 @@ Btclient = {};
 //  - A Bitcoin address
 //  - A callback passed with an array of Object's
 Btclient.unspentoutputs = function (address, cb) {
-    'use strict';
     var url = 'http://blockchain.info/unspent';
     Btclient.util.ajax('GET', url, {'active': address}, 'text', function (err, res) {
         if (err) {
@@ -82,7 +86,6 @@ Btclient.util = {};
 // Output:
 //  - A string of the form 'parameter=value&...'
 Btclient.util.encodehttpparameters = function (httpparameters) {
-    'use strict';
     var encodedhttpparameters = '';
     for (var parameter in httpparameters) {
         if (encodedhttpparameters.length > 0) { encodedhttpparameters += '&'; }
@@ -99,7 +102,6 @@ Btclient.util.encodehttpparameters = function (httpparameters) {
 //  - Response type (only ['text', 'arraybuffer'] tested!)
 //  - A callback passed with the HTTP response
 Btclient.util.ajax = function (httpmethod, url, parameters, responsetype, cb) {
-    'use strict';
     var xhr = new XMLHttpRequest();
     xhr.responseType = responsetype;
     var encodedhttpparameters = Btclient.util.encodehttpparameters(parameters);
@@ -133,7 +135,6 @@ Btclient.util.ajax = function (httpmethod, url, parameters, responsetype, cb) {
 //  - base64: [true,false]
 //  - A callback passed with the dataURL 
 Btclient.util.arraybuffertodataURL = function (arraybuffer, MIMEtype, base64, cb) {
-    'use strict';
     if (!arraybuffer) {
         return cb(new Error("No ArrayBuffer seed specified."));
     }
@@ -148,7 +149,6 @@ Btclient.util.arraybuffertodataURL = function (arraybuffer, MIMEtype, base64, cb
 //  - dataURL of the QR code to decode
 //  - A callback passed with the string wrapped by the QR code
 Btclient.util.decodeQR = function (dataURL, cb) {
-    'use strict';
     qrcode.callback = function (data) {
         cb(null, data);
     };
@@ -165,3 +165,4 @@ Btclient.settings.toaddress = '';
 
 // Default Bitcoin amount to use in a Tx
 Btclient.settings.amount = 0;
+})();
