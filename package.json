@@ -1,0 +1,18 @@
+{
+  "name": "Btclient",
+  "version": "0.0.0",
+  "description": "A wrapper around bitcoinJS",
+  "main": "/src/index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NAGTeam/btclient.git"
+  },
+  "author": ",nag",
+  "bugs": {
+    "url": "https://github.com/NAGTeam/btclient/issues"
+  },
+  "homepage": "https://github.com/NAGTeam/btclient",
+  "dependencies": {
+    "jshint": "^2.5.10"
+  }
+}

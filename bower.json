@@ -1,0 +1,17 @@
+{
+  "name": "btclient",
+  "version": "0.0.0",
+  "homepage": "https://github.com/NAGTeam/btclient",
+  "authors": [
+    "NAG"
+  ],
+  "description": "A naif bitcoin client",
+  "dependencies": {
+    "tweetnacl": "~0.12.2",
+    "jsqrcode": "*",
+    "zepto": "~1.1.4"
+  },
+  "devDependencies": {
+    "qunit": "~1.15.0"
+  }
+}
