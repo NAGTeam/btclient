@@ -1,5 +1,7 @@
 # btclient
 
+[![Build Status](https://travis-ci.org/NAGTeam/btclient.svg)](https://travis-ci.org/NAGTeam/btclient)
+
 # Please read before any push, bro!
 
 A very naif bitcoin client that can be used using QR-codes for sending
