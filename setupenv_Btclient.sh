@@ -7,7 +7,7 @@ setupenv_Btclient() {
     which bower || (echo '
         [!] You need bower to continue.
         Check your distribution documentation.'; return);
-    git clone git@github.com:NAGTeam/btclient.git || return;
+    git clone https://github.com/NAGTeam/btclient.git || return;
     cd btclient;
     npm install || (echo '
         [!] npm failed to install dependencies.'; return);
