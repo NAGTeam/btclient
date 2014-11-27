@@ -103,6 +103,7 @@ Btclient.util.encodehttpparameters = function (httpparameters) {
 //  - A callback passed with the HTTP response
 Btclient.util.ajax = function (httpmethod, url, parameters, responsetype, cb) {
     var xhr = new XMLHttpRequest();
+    xhr.open(httpmethod, url, true);
     xhr.responseType = responsetype;
     var encodedhttpparameters = Btclient.util.encodehttpparameters(parameters);
     if (Object.keys(parameters).length > 0) {
@@ -124,7 +125,6 @@ Btclient.util.ajax = function (httpmethod, url, parameters, responsetype, cb) {
     if (Object.keys(parameters).length > 0) {
         url = httpmethod == 'GET' ? url + '?' + encodedhttpparameters : url;
     }
-    xhr.open(httpmethod, url, true);
     xhr.send(httpmethod == 'POST' ? encodedhttpparameters : null);
 };
 
