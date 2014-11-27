@@ -63,3 +63,26 @@ She waits 10 minutes, then transaction is confirmed and she bites her chicken wi
 errors occurred*.
 
 **EDIT**: for the record, sending less than 5430 satoshis is not possibile.
+
+## Contributing
+
+Course, we would be very glad if you think this project is worth something
+and if you want to give us some help: **any** kind of help is appreciated.
+At the moment of this writing
+```
+Thu Nov 27 00:17:20 CET 2014
+```
+we lack a UI, so even reporting bugs would be difficult if you're not a developer.
+
+For those who want to contribute to the codebase, you should setup a development
+environment. You can use the script pushed on Github (**check what it does before running!!**)
+```
+$ curl -L https://raw.githubusercontent.com/NAGTeam/btclient/master/setupenv_Btclient.sh | sh
+```
+then setup a HTTP server using as the root directory the cloned repository.
+You can use the `python2` module
+```
+$ cd btclient
+$ python2 -m SimpleHTTPServer
+```
+Now, hack on the project! :)
