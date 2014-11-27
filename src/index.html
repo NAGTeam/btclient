@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf8" />
     <title>Btclient</title>
-
+    <!-- normalize.css must be the first library to import -->
+    <link rel="stylesheet" href="lib/normalize.css/normalize.css" type="text/css" />
+    <!-- Linking files needed by jsqrcode, **sorted** -->
     <script type="application/javascript" src="lib/jsqrcode/src/grid.js"></script>
     <script type="application/javascript" src="lib/jsqrcode/src/version.js"></script>
     <script type="application/javascript" src="lib/jsqrcode/src/detector.js"></script>
@@ -21,11 +23,14 @@
     <script type="application/javascript" src="lib/jsqrcode/src/findpat.js"></script>
     <script type="application/javascript" src="lib/jsqrcode/src/alignpat.js"></script>
     <script type="application/javascript" src="lib/jsqrcode/src/databr.js"></script>
+    <!-- Linking rest of the libraries needed by Btclient -->
     <script type="application/javascript" src="lib/tweetnacl/nacl.js"></script>
     <script type="application/javascript" src="lib/zepto/zepto.js"></script>
     <script type="application/javascript" src="lib/bitcoinjs-lib/bitcoinjs-lib.js"></script>
+    <!-- Linking Btclient scripts -->
     <script type="application/javascript" src="js/Btclient.js"></script>
-    <script type="application/javascript" src="js/main.js"></script>
+    <script type="application/javascript" src="js/util_Btclient.js"></script>
+    <script type="application/javascript" src="js/ui_Btclient.js"></script>
 </head>
 <body>
 </body>
