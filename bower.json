@@ -9,7 +9,6 @@
   "dependencies": {
     "tweetnacl": "~0.12.2",
     "jsqrcode": "*",
-    "zepto": "~1.1.4",
     "normalize.css": "~3.0.2",
     "uTip": "~1.1.0",
     "mustache.js": "~0.8.2"
