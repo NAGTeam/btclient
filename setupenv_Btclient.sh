@@ -13,6 +13,8 @@ setupenv_Btclient() {
         [!] npm failed to install dependencies.'; return);
     bower install || (echo '
         [!] bower failed to install dependencies.'; return);
+    make build  || (echo '
+        [!] Make failed the building process'; return);
     echo; echo '[+] You are now ready to contribute!';
 }
 
