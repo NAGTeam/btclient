@@ -11,7 +11,8 @@
     "jsqrcode": "*",
     "normalize.css": "~3.0.2",
     "uTip": "~1.1.0",
-    "mustache.js": "~0.8.2"
+    "mustache.js": "~0.8.2",
+    "uikit": "~2.12.0"
   },
   "devDependencies": {
     "qunit": "~1.15.0"
