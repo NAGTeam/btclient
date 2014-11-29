@@ -6,3 +6,20 @@ img.uk-margin-bottom {
     width: 140;
     height: 120;
 }
+
+input {
+	float: left;
+	padding-right: 25px;
+}
+
+button {
+	float: right;
+	display: inline-block;
+	margin-top: -39px;
+	margin-right: -10px;
+}
+
+.uk-button-link {
+	color: #000;
+	text-decoration: none;
+}
