@@ -12,14 +12,16 @@ input {
     padding-right: 25px;
 }
 
-button {
+button.uk-icon-qrcode {
     float: right;
     display: inline-block;
     margin-top: -39px;
     margin-right: -10px;
+    color: black;
+    text-decoration: none;
 }
 
-.uk-button-link {
-    color: #000;
+button.uk-icon-qrcode:hover {
+    color: #4B4747;
     text-decoration: none;
 }
