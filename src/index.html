@@ -43,18 +43,18 @@
             <img class="uk-margin-bottom" src="img/bitcoin_logo.png" alt="">
             <form class="uk-panel uk-panel-box uk-form">
                 <div class="uk-grid-small uk-form-row">
-                    <input class="uk-width-1-1 uk-form-large" type="password" placeholder="Your private key">
+                    <input class="sender-key uk-width-1-1 uk-form-large" type="password" placeholder="Your private key" name="sender-key" />
                     <button class="uk-button-link uk-button-large uk-icon-medium uk-icon-qrcode"></button>
                 </div>
                 <div class="uk-grid-small uk-form-row">
-                    <input class="uk-width-1-1 uk-form-large" type="text" placeholder="Address of the receiver">
+                    <input class="receiver-address uk-width-1-1 uk-form-large" type="text" placeholder="Address of the receiver" name="receiver-address" />
                     <button class="uk-button-link uk-button-large uk-icon-medium uk-icon-qrcode"></button>
                 </div>
                 <div class="uk-form-row">
                     <input class="uk-width-1-1 uk-form-large" type="number" placeholder="Amount of Satoshis to send">
                 </div>
                 <div class="uk-form-row">
-                    <button class="uk-width-1-1 uk-button uk-button-primary uk-button-large" type="submit">Send transaction</button>
+                    <a class="send-tx uk-width-1-1 uk-button uk-button-primary uk-button-large" href="#">Send transaction</a>
                 </div>
             </form>
         </div>
