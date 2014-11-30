@@ -1,0 +1,1 @@
+Btclient.templates = {};
