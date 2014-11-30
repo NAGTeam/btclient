@@ -68,11 +68,8 @@ errors occurred*.
 
 Course, we would be very glad if you think this project is worth something
 and if you want to give us some help: **any** kind of help is appreciated.
-At the moment of this writing
-```
-Thu Nov 27 00:17:20 CET 2014
-```
-we lack a UI, so even reporting bugs would be difficult if you're not a developer.
+
+We lack a UI, so even reporting bugs would be difficult if you're not a developer.
 
 For those who want to contribute to the codebase, you should setup a development
 environment. You can use the script pushed on Github (**check what it does before running!!**)
@@ -86,3 +83,7 @@ $ cd btclient
 $ python2 -m SimpleHTTPServer
 ```
 Now, hack on the project! :)
+
+```
+https://www.youtube.com/watch?v=3L4YrGaR8E4
+```
