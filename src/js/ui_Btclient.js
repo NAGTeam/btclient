@@ -25,13 +25,16 @@ Btclient.UI.start = function () {
                     if (err) {
                         throw err;
                     }
-                    Btclient.broadcasttx(signedtx, function (err, res) {
-                        if (err) {
-                            throw err;
-                        }
-                        console.log('[Btclient] Transaction sent.');
-                        console.log(res);
-                    });
+                    console.log('signedtx' + JSON.stringify(signedtx));
+                    /*
+                     *Btclient.broadcasttx(signedtx, function (err, res) {
+                     *    if (err) {
+                     *        throw err;
+                     *    }
+                     *    console.log('[Btclient] Transaction sent.');
+                     *    console.log(res);
+                     *});
+                     */
                 });
             });
         });
